@@ -1,0 +1,88 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffcad4, #f3a0b2);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section {
+  text-align: center;
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.heart-button {
+  background: #ff5e78;
+  color: white;
+  font-size: 28px;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.heart-button:hover {
+  transform: scale(1.1);
+}
+
+.envelope-image {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.envelope-image:hover {
+  transform: scale(1.05);
+}
+
+.hint {
+  color: white;
+  margin-top: 10px;
+}
+
+.letter-box {
+  background: #fff9f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin: auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+.letter-title {
+  font-family: 'Dancing Script', cursive;
+  color: #ff4d6d;
+  font-size: 36px;
+}
+
+.letter-content {
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
